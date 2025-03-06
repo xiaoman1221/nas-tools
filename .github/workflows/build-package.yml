@@ -46,7 +46,7 @@ jobs:
       shell: pwsh
 
     - name: Upload windows file
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: windows
         path: D:/a/nas-tools/nas-tools/nas-tools/package/dist/nas-tools.exe
@@ -92,7 +92,7 @@ jobs:
         shell: pwsh
 
       - name: Upload linux file
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: linux-amd64
           path: /home/runner/work/nas-tools/nas-tools/nas-tools/package/dist/nas-tools.linux.amd64
@@ -118,7 +118,7 @@ jobs:
         shell: pwsh
 
       - name: Upload linux file
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: linux-arm64
           path: /home/runner/work/nas-tools/nas-tools/nas-tools/package/dist/nas-tools.linux.arm64
@@ -144,7 +144,7 @@ jobs:
         shell: pwsh
 
       - name: Upload linux file
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: linux-musl-amd64
           path: /home/runner/work/nas-tools/nas-tools/nas-tools/package/dist/nas-tools.linux.musl.amd64
@@ -170,7 +170,7 @@ jobs:
         shell: pwsh
 
       - name: Upload linux file
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: linux-musl-arm64
           path: /home/runner/work/nas-tools/nas-tools/nas-tools/package/dist/nas-tools.linux.musl.arm64
@@ -216,7 +216,7 @@ jobs:
         shell: bash
 
       - name: Upload mac file
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: macos
           path: /Users/runner/work/nas-tools/nas-tools/nas-tools/package/dist/nas-tools.macos
